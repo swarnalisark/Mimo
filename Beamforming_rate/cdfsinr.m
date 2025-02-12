@@ -1,6 +1,6 @@
 clear
 numx=0;
-M0203_sort = importfile("C:\Users\swarn\Documents\MATLAB\mimo\M0203.txt", [1, Inf]);
+M0203_sort = importfile("C:\Users\Swarnali\visionbf\vision-bf\data\UAV-benchmark-MOTD_v1.0\RES_MOT\YOLOv5\SORT\M0203.txt",, [1, Inf]);
 K = [2,5,7,8];
 R_K = ones(length(K));
 
@@ -36,7 +36,7 @@ for ik = 1:length(K)
     
     end
     
-    M0203_xywh_bbox = importvelocity("C:\Users\swarn\Documents\MATLAB\mimo\M0203.txt", [1, Inf]);
+    M0203_xywh_bbox = importvelocity("C:\Users\Swarnali\visionbf\vision-bf\data\UAV-benchmark-MOTD_v1.0\RES_MOT\YOLOv5\SORT\M0203.txt", [1, Inf]);
     desired_data_xywh = M0203_xywh_bbox(moving_car_idx,:);
     center_x = desired_data_xywh.x + desired_data_xywh.w/2;
     center_y = desired_data_xywh.y - desired_data_xywh.h/2;

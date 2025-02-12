@@ -1,6 +1,6 @@
 %% Fig 9 multiple cars
 clear
-M0203_sort = importfile("C:\Users\swarn\Documents\MATLAB\mimo\M0203.txt", [1, Inf]);
+M0203_sort = importfile("C:\Users\Swarnali\visionbf\vision-bf\data\UAV-benchmark-MOTD_v1.0\RES_MOT\YOLOv5\SORT\M0203.txt", [1, Inf]);
 K = [2,5,7,10];
 R_K = ones(length(K));
 

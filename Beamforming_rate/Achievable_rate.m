@@ -1,6 +1,6 @@
 %% Figure 8: single moving vehicle
 clear
-M0203_sort = importfile("C:\Users\swarn\Documents\MATLAB\mimo\M0203.txt", [1, Inf]);
+M0203_sort = importfile("C:\Users\Swarnali\visionbf\vision-bf\data\UAV-benchmark-MOTD_v1.0\RES_MOT\YOLOv5\SORT\M0203.txt", [1, Inf]);
 % M0203_gt_xywh = import_gt_txt("C:\Users\jiale\visionbf\vision-bf\data\UAV-benchmark-MOTD_v1.0\GT\M0203_gt.txt", [1, Inf]);
 % M0203_gt_center_x = M0203_gt_xywh.x + M0203_gt_xywh.w/2;
 % M0203_gt_center_y = M0203_gt_xywh.y - M0203_gt_xywh.h/2;
@@ -47,7 +47,7 @@ for iN = 1:length(N_collection)
     
     %finding rho_k
     
-    M0203_xywh_bbox = importvelocity("C:\Users\swarn\Documents\MATLAB\mimo\M0203.txt", [1, Inf]);
+    M0203_xywh_bbox = importvelocity("C:\Users\Swarnali\visionbf\vision-bf\data\UAV-benchmark-MOTD_v1.0\RES_MOT\YOLOv5\SORT\M0203.txt", [1, Inf]);
     desired_data_xywh = M0203_xywh_bbox(moving_car_idx,:);
     center_x = desired_data_xywh.x + desired_data_xywh.w/2;
     center_y = desired_data_xywh.y - desired_data_xywh.h/2;
